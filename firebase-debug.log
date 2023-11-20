@@ -1,0 +1,314 @@
+[debug] [2023-11-20T06:35:55.031Z] ----------------------------------------------------------------------
+[debug] [2023-11-20T06:35:55.038Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KIIT\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-20T06:35:55.038Z] CLI Version:   12.9.1
+[debug] [2023-11-20T06:35:55.039Z] Platform:      win32
+[debug] [2023-11-20T06:35:55.039Z] Node Version:  v20.4.0
+[debug] [2023-11-20T06:35:55.040Z] Time:          Mon Nov 20 2023 12:05:55 GMT+0530 (India Standard Time)
+[debug] [2023-11-20T06:35:55.040Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-20T06:35:55.047Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-20T06:35:55.048Z] > authorizing via signed-in user (maitiagniva@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\KIIT\Desktop\loginit
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-20T06:36:06.976Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-11-20T06:36:08.983Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-11-20T06:36:08.984Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project loginit-c7802 (loginit) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-11-20T06:36:12.395Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-11-20T06:36:12.396Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:36:14.042Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firebasedatabase.googleapis.com 200
+[debug] [2023-11-20T06:36:14.043Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-11-20T06:36:14.046Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/loginit-c7802/locations/-/instances/loginit-c7802-default-rtdb [none]
+[debug] [2023-11-20T06:36:15.645Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/loginit-c7802/locations/-/instances/loginit-c7802-default-rtdb 200
+[debug] [2023-11-20T06:36:15.645Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/loginit-c7802/locations/-/instances/loginit-c7802-default-rtdb {"name":"projects/116212466576/locations/asia-southeast1/instances/loginit-c7802-default-rtdb","project":"projects/116212466576","databaseUrl":"https://loginit-c7802-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-11-20T06:36:20.573Z] >>> [apiv2][query] GET https://loginit-c7802-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-11-20T06:36:20.763Z] <<< [apiv2][status] GET https://loginit-c7802-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-11-20T06:36:20.763Z] <<< [apiv2][body] GET https://loginit-c7802-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for loginit-c7802-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-11-20T06:36:20.770Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firestore.googleapis.com [none]
+[debug] [2023-11-20T06:36:20.771Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firestore.googleapis.com x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:36:22.728Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firestore.googleapis.com 200
+[debug] [2023-11-20T06:36:22.728Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firestore.googleapis.com [omitted]
+[debug] [2023-11-20T06:36:22.729Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default) [none]
+[debug] [2023-11-20T06:36:23.172Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default) 200
+[debug] [2023-11-20T06:36:23.172Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default) {"name":"projects/loginit-c7802/databases/(default)","uid":"1c578b37-7fd8-48e0-8ecd-dd653837e41e","createTime":"2023-11-20T06:34:44.736901Z","updateTime":"2023-11-20T06:34:44.736901Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-11-20T06:34:44.736901Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IMeZjKP70YIDMIWPj/T60YID"}
+[debug] [2023-11-20T06:36:23.173Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-11-20T06:36:23.174Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-20T06:36:23.174Z] > authorizing via signed-in user (maitiagniva@gmail.com)
+[debug] [2023-11-20T06:36:23.175Z] [iam] checking project loginit-c7802 for permissions ["firebase.projects.get"]
+[debug] [2023-11-20T06:36:23.176Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions [none]
+[debug] [2023-11-20T06:36:23.176Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:36:23.176Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-20T06:36:25.702Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions 200
+[debug] [2023-11-20T06:36:25.703Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-11-20T06:36:30.788Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/releases pageSize=10&pageToken=
+[debug] [2023-11-20T06:36:32.417Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/releases 200
+[debug] [2023-11-20T06:36:32.417Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/releases {"releases":[{"name":"projects/loginit-c7802/releases/cloud.firestore","rulesetName":"projects/loginit-c7802/rulesets/a37f7c13-ca32-4890-83dd-b6ca4ebdc7b7","createTime":"2023-11-20T06:34:54.214850Z","updateTime":"2023-11-20T06:34:54.214850Z"}]}
+[debug] [2023-11-20T06:36:32.418Z] Found ruleset: projects/loginit-c7802/rulesets/a37f7c13-ca32-4890-83dd-b6ca4ebdc7b7
+[debug] [2023-11-20T06:36:32.418Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/rulesets/a37f7c13-ca32-4890-83dd-b6ca4ebdc7b7 [none]
+[debug] [2023-11-20T06:36:32.828Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/rulesets/a37f7c13-ca32-4890-83dd-b6ca4ebdc7b7 200
+[debug] [2023-11-20T06:36:32.829Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/rulesets/a37f7c13-ca32-4890-83dd-b6ca4ebdc7b7 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-11-20T06:36:34.124Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-11-20T06:36:34.127Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-11-20T06:36:34.529Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-11-20T06:36:34.529Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-11-20T06:36:34.561Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-11-20T06:36:34.561Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/loginit-c7802/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-11-20T06:36:34.566Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-20T06:36:34.566Z] > authorizing via signed-in user (maitiagniva@gmail.com)
+[debug] [2023-11-20T06:36:34.566Z] [iam] checking project loginit-c7802 for permissions ["firebase.projects.get"]
+[debug] [2023-11-20T06:36:34.567Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions [none]
+[debug] [2023-11-20T06:36:34.567Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:36:34.567Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-20T06:36:35.843Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions 200
+[debug] [2023-11-20T06:36:35.843Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-20T06:36:35.844Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-11-20T06:36:35.844Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:36:35.848Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-11-20T06:36:35.849Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:36:37.440Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com 200
+[debug] [2023-11-20T06:36:37.440Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-11-20T06:36:37.441Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-11-20T06:36:37.442Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:36:37.447Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/runtimeconfig.googleapis.com 200
+[debug] [2023-11-20T06:36:37.447Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-11-20T06:36:37.943Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-11-20T06:36:37.944Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-11-20T06:36:47.949Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-11-20T06:36:47.950Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:36:49.562Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com 200
+[debug] [2023-11-20T06:36:49.562Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/requirements.txt 
+[info] +  Wrote functions/.gitignore 
+[info] +  Wrote functions/main.py 
+[debug] [2023-11-20T06:37:19.539Z] Running command with virtualenv: command="C:\Users\KIIT\Desktop\loginit\functions\venv\Scripts\activate.bat", args=["","&&","pip3","install","--upgrade","pip"]
+[debug] [2023-11-20T06:37:26.059Z] Error: spawn "C:\Users\KIIT\Desktop\loginit\functions\venv\Scripts\activate.bat" ENOENT
+    at notFoundError (C:\Users\KIIT\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:6:26)
+    at verifyENOENT (C:\Users\KIIT\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:40:16)
+    at cp.emit (C:\Users\KIIT\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\lib\enoent.js:27:25)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-11-20T06:37:44.820Z] ----------------------------------------------------------------------
+[debug] [2023-11-20T06:37:44.825Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\KIIT\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-20T06:37:44.826Z] CLI Version:   12.9.1
+[debug] [2023-11-20T06:37:44.826Z] Platform:      win32
+[debug] [2023-11-20T06:37:44.827Z] Node Version:  v20.4.0
+[debug] [2023-11-20T06:37:44.827Z] Time:          Mon Nov 20 2023 12:07:44 GMT+0530 (India Standard Time)
+[debug] [2023-11-20T06:37:44.827Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-20T06:37:44.841Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-20T06:37:44.842Z] > authorizing via signed-in user (maitiagniva@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\KIIT\Desktop\loginit
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-11-20T06:37:56.274Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-11-20T06:37:57.681Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-11-20T06:37:57.681Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project loginit-c7802 (loginit) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-11-20T06:37:59.822Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-11-20T06:37:59.822Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:38:04.209Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firebasedatabase.googleapis.com 200
+[debug] [2023-11-20T06:38:04.210Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-11-20T06:38:04.213Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/loginit-c7802/locations/-/instances/loginit-c7802-default-rtdb [none]
+[debug] [2023-11-20T06:38:06.429Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/loginit-c7802/locations/-/instances/loginit-c7802-default-rtdb 200
+[debug] [2023-11-20T06:38:06.429Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/loginit-c7802/locations/-/instances/loginit-c7802-default-rtdb {"name":"projects/116212466576/locations/asia-southeast1/instances/loginit-c7802-default-rtdb","project":"projects/116212466576","databaseUrl":"https://loginit-c7802-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-11-20T06:38:15.542Z] >>> [apiv2][query] GET https://loginit-c7802-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-11-20T06:38:15.821Z] <<< [apiv2][status] GET https://loginit-c7802-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-11-20T06:38:15.821Z] <<< [apiv2][body] GET https://loginit-c7802-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for loginit-c7802-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-11-20T06:38:15.827Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firestore.googleapis.com [none]
+[debug] [2023-11-20T06:38:15.828Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firestore.googleapis.com x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:38:17.787Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firestore.googleapis.com 200
+[debug] [2023-11-20T06:38:17.787Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/firestore.googleapis.com [omitted]
+[debug] [2023-11-20T06:38:17.788Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default) [none]
+[debug] [2023-11-20T06:38:18.168Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default) 200
+[debug] [2023-11-20T06:38:18.168Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default) {"name":"projects/loginit-c7802/databases/(default)","uid":"1c578b37-7fd8-48e0-8ecd-dd653837e41e","createTime":"2023-11-20T06:34:44.736901Z","updateTime":"2023-11-20T06:34:44.736901Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-11-20T06:34:44.736901Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IMfj99n70YIDMP3Xwqj70YID"}
+[debug] [2023-11-20T06:38:18.168Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-11-20T06:38:18.169Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-20T06:38:18.169Z] > authorizing via signed-in user (maitiagniva@gmail.com)
+[debug] [2023-11-20T06:38:18.169Z] [iam] checking project loginit-c7802 for permissions ["firebase.projects.get"]
+[debug] [2023-11-20T06:38:18.170Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions [none]
+[debug] [2023-11-20T06:38:18.170Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:38:18.170Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-20T06:38:19.636Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions 200
+[debug] [2023-11-20T06:38:19.636Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-11-20T06:38:23.622Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/releases pageSize=10&pageToken=
+[debug] [2023-11-20T06:38:25.336Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/releases 200
+[debug] [2023-11-20T06:38:25.336Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/releases {"releases":[{"name":"projects/loginit-c7802/releases/cloud.firestore","rulesetName":"projects/loginit-c7802/rulesets/a37f7c13-ca32-4890-83dd-b6ca4ebdc7b7","createTime":"2023-11-20T06:34:54.214850Z","updateTime":"2023-11-20T06:34:54.214850Z"}]}
+[debug] [2023-11-20T06:38:25.337Z] Found ruleset: projects/loginit-c7802/rulesets/a37f7c13-ca32-4890-83dd-b6ca4ebdc7b7
+[debug] [2023-11-20T06:38:25.337Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/rulesets/a37f7c13-ca32-4890-83dd-b6ca4ebdc7b7 [none]
+[debug] [2023-11-20T06:38:26.691Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/rulesets/a37f7c13-ca32-4890-83dd-b6ca4ebdc7b7 200
+[debug] [2023-11-20T06:38:26.691Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/loginit-c7802/rulesets/a37f7c13-ca32-4890-83dd-b6ca4ebdc7b7 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-11-20T06:38:30.157Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-11-20T06:38:30.160Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-11-20T06:38:30.588Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-11-20T06:38:30.588Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-11-20T06:38:30.605Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-11-20T06:38:30.605Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/loginit-c7802/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/loginit-c7802/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-11-20T06:38:30.608Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-20T06:38:30.609Z] > authorizing via signed-in user (maitiagniva@gmail.com)
+[debug] [2023-11-20T06:38:30.609Z] [iam] checking project loginit-c7802 for permissions ["firebase.projects.get"]
+[debug] [2023-11-20T06:38:30.609Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions [none]
+[debug] [2023-11-20T06:38:30.609Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:38:30.609Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-20T06:38:32.025Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions 200
+[debug] [2023-11-20T06:38:32.026Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/loginit-c7802:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-11-20T06:38:32.026Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-11-20T06:38:32.026Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:38:32.030Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-11-20T06:38:32.030Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/loginit-c7802
+[debug] [2023-11-20T06:38:33.835Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com 200
+[debug] [2023-11-20T06:38:33.835Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-11-20T06:38:33.850Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/runtimeconfig.googleapis.com 200
+[debug] [2023-11-20T06:38:33.851Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/loginit-c7802/services/runtimeconfig.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote loginit/package.json 
+[info] +  Wrote loginit/.eslintrc.js 
+[info] +  Wrote loginit/index.js 
+[info] +  Wrote loginit/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2023-11-20T06:39:31.685Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/loginit-c7802 [none]
+[debug] [2023-11-20T06:39:32.240Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/loginit-c7802 200
+[debug] [2023-11-20T06:39:32.241Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/loginit-c7802 {"projectId":"loginit-c7802","projectNumber":"116212466576","displayName":"loginit","name":"projects/loginit-c7802","resources":{"hostingSite":"loginit-c7802","realtimeDatabaseInstance":"loginit-c7802-default-rtdb"},"state":"ACTIVE","etag":"1_8d590b29-70e8-46f0-a91c-e588215e7867"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-11-20T06:39:38.150Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-11-20T06:39:38.312Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-11-20T06:39:38.312Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.6.0","browserURL":"https://www.gstatic.com/firebasejs/10.6.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.6.0/firebase.tgz"},"live":{"version":"10.6","browserURL":"https://www.gstatic.com/firebasejs/live/10.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.6.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.6.0/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.6.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.6.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.6.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.6.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.6.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.6.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.6.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.6.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\KIIT 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=785557204&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-11-20T06:39:48.466Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-11-20T06:39:48.466Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-11-20T06:39:50.057Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-11-20T06:39:50.057Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-11-20T06:39:50.074Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-11-20T06:39:50.671Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-11-20T06:39:50.672Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"AgnivaMaiti","id":122050817,"node_id":"U_kgDOB0ZZAQ","avatar_url":"https://avatars.githubusercontent.com/u/122050817?v=4","gravatar_id":"","url":"https://api.github.com/users/AgnivaMaiti","html_url":"https://github.com/AgnivaMaiti","followers_url":"https://api.github.com/users/AgnivaMaiti/followers","following_url":"https://api.github.com/users/AgnivaMaiti/following{/other_user}","gists_url":"https://api.github.com/users/AgnivaMaiti/gists{/gist_id}","starred_url":"https://api.github.com/users/AgnivaMaiti/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/AgnivaMaiti/subscriptions","organizations_url":"https://api.github.com/users/AgnivaMaiti/orgs","repos_url":"https://api.github.com/users/AgnivaMaiti/repos","events_url":"https://api.github.com/users/AgnivaMaiti/events{/privacy}","received_events_url":"https://api.github.com/users/AgnivaMaiti/received_events","type":"User","site_admin":false,"name":"Agniva Maiti","company":null,"blog":"https://maitiagniva.wixsite.com/agniva-maiti","location":"Bhubaneswar, India","email":null,"hireable":null,"bio":"Book-lover, cloud-gazer, and coffee aficionado on a coding adventure.","twitter_username":null,"public_repos":23,"public_gists":0,"followers":0,"following":4,"created_at":"2023-01-05T19:08:22Z","updated_at":"2023-11-05T13:38:33Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":543,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] +  Success! Logged into GitHub as AgnivaMaiti 
+[info] 
+[debug] [2023-11-20T06:39:56.164Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-11-20T06:39:56.534Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-11-20T06:39:56.535Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
